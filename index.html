@@ -13,7 +13,9 @@
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <!-- Update these with your own fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -36,7 +38,8 @@
     <!--Introduction-->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hi there! I'm <strong> Lucia Cerchie </strong>
+            Hi there! I'm <strong id="strong"> Lucia Cerchie
+            </strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">full stack dev</p>
         <img src="img/profile.png" alt="a picture of Lucia Cerchie smiling" class="intro__img">
@@ -66,27 +69,43 @@
 
     <section class="my-projects" id="projects">
         <h2 class="section__title section__title--projects">
-            My projects
+            My Projects
         </h2>
+
         <div class="projects">
             <div class="project">
-                <h3>Mars Photo Album</h3>
-                <img src="NEED IMG" alt="">
-                <p>This project raises awareness of NASA's presence on Mars.It educates the user about the data we have
-                    available to us and about the technology used to acquire the data. It pulls from two APIs, NASA's
-                    Mars Rover Photos Viewer for the Mars photos, and from NASA's Mars Weather Service APIfor the
-                    weather widget. This project uses Python, Flask, Axios, SQLAlchemy, CSS, and HTML. Please enjoy
-                    clicking around to see how I wrote my routes, models, forms, testing, and templates.
+                <h3 class="h3-projects">Mars Photo Album</h3>
+                <a href="https://mars-photo-album.herokuapp.com/">
+                    <img src="img/mars-photo-album.png" alt="website mock-up" class="project-thumbnail"></a>
+                <p class="p-proj">This project raises awareness of NASA's presence on Mars. It educates the user about
+                    the data we have
+                    available to us and about the technology used to acquire the data. </p>
+                <p class="p-proj">
+                    It pulls from two APIs, NASA's Mars Rover Photos Viewer for the Mars photos, and from NASA's Mars
+                    Weather Service API for the weather widget. I used Python, Flask, Axios, SQLAlchemy, CSS,
+                    and HTML to create the features I needed for this project.</p>
+                <p class="p-proj">
+                    I used Flask to write the routes, Axios to make my API calls, SQLAlchemy to build my database, CSS
+                    Bootstrap to style my website, and Jinja to pull variables from my routes into my HTML templates.
+
                 </p>
             </div>
             <!--/ project-->
 
             <div class="project">
-                <h3>Better Together NASA SpaceApps 2020</h3>
-                <img src="NEED IMG" alt="">
-                <p>This was a collaborative effort to make a tool to help mitigate inequality. We worked together in
-                    response to NASA's Confront-Better Together challenge for the 2020 SpaceApps Hackathon.
+                <h3 class="h3-projects">NASA SpaceApps 2020</h3>
+                <a href="https://better-together-tardigrades.herokuapp.com/"><img src="img/mvp.png"
+                        alt="website mock-up" class="project-thumbnail"></a>
+                <p class="p-proj"> This was a collaborative effort in response to NASA's Confront-Better Together
+                    challenge for the annual hackathon. My team and I built an app designed to help people practice
+                    responding to biased comments.
                 </p>
+                <p class="p-proj">We used Python, Flask, and Jinja templating to create our website, with some SQALchemy
+                    on the backend. My team and I enjoyed working through problems together from four different states,
+                    across 3 different time zones.</p>
+
+                <p class="p-proj">At the end of our time, we were proud to submit a minimum viable product to NASA. We
+                    also learned how to use remote communication effectively.</p>
             </div>
             <!--/ project-->
 
