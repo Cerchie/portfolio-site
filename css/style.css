@@ -6,11 +6,11 @@
 
 /* custom properties */
 :root {
-    --ff-primary: 'Satisfy', cursive;
-    --ff-secondary: 'Montserrat', sans-serif;
+    --ff-primary: 'Merriweather', serif;
+    --ff-secondary: 'Merriweather', serif;
     --fw-reg: 300;
     --fw-bold: 900;
-    --clr-light: #fff;
+    --clr-light: #fff3e0;
     --clr-dark: #2C3A47;
     --clr-accent: #FEA47F;
 
@@ -81,7 +81,7 @@ strong {
 }
 
 p {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 .btn:hover {
@@ -115,7 +115,7 @@ h3 {
 
 .section__title--intro {
     font-weight: var(--fw-reg);
-    font-family: 'MontSerrat', sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 3rem;
     margin-left: 1rem;
 }
@@ -258,6 +258,7 @@ h3 {
 
 .intro {
     position: relative;
+
 }
 
 .intro__img {
@@ -293,6 +294,7 @@ h3 {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+
 }
 
 /* my project section */
@@ -489,7 +491,7 @@ h3 {
 .h3-projects {
     margin: 1.5rem;
     font-size: 2rem;
-    font-family: 'MontSerrat', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 .p-proj {
@@ -498,4 +500,36 @@ h3 {
 
 a {
     color: var(--clr-accent);
+}
+
+.intro-p {
+    margin: 2rem;
+    margin-top: 0px;
+    font-size: larger;
+}
+
+/* @media (min-width: 800px) {
+    .intro-p {
+        max-width: 600px;
+        margin-left: 10em;
+        padding-left: 4em;
+    }
+} */
+
+#hand2 {
+    max-width: 150px;
+    margin-left: 80%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 1050px) {
+    .intro-p-ps {
+        margin-left: 80%;
+    }
+}
+
+.section__title section__title--projects {
+    margin-bottom: 0px;
+    padding: 0px;
 }
