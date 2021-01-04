@@ -42,6 +42,7 @@ body {
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
+    font-display: swap;
     line-height: 1.6;
 }
 
@@ -90,9 +91,7 @@ p {
 
 /* typography */
 
-@font-face {
-    font-display: swap;
-}
+
 
 h1,
 h2,
