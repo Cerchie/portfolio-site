@@ -90,6 +90,10 @@ p {
 
 /* typography */
 
+@font-face {
+    font-display: swap;
+}
+
 h1,
 h2,
 h3 {
