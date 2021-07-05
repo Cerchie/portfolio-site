@@ -11,7 +11,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
     --clr-light: #fff3e0;
-    --clr-dark: #2C3A47;
+    --clr-dark: #2c3a47;
     --clr-accent: #ff7338;
 
     --fs-h1: 3rem;
@@ -19,8 +19,8 @@
     --fs-h3: 1.25rem;
     --fs0body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
-        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -58,8 +58,6 @@ img {
 strong {
     font-weight: var(--fw-bold);
     font-family: 'Satisfy', cursive;
-    ;
-
 }
 
 :focus {
@@ -70,11 +68,11 @@ strong {
 /* buttons */
 .btn {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     background: var(--clr-dark);
     text-decoration: none;
     cursor: pointers;
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
@@ -90,8 +88,6 @@ p {
 }
 
 /* typography */
-
-
 
 h1,
 h2,
@@ -113,7 +109,7 @@ h3 {
 }
 
 .section__title {
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
 }
 
 .section__title--intro {
@@ -136,7 +132,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
-    padding: .25em;
+    padding: 0.25em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -163,7 +159,7 @@ h3 {
     z-index: 100;
 
     transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .nav__list {
@@ -189,7 +185,7 @@ h3 {
 }
 
 .nav-toggle {
-    padding: .5em;
+    padding: 0.5em;
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -208,7 +204,7 @@ h3 {
 }
 
 .nav-open .hamburger {
-    transform: rotate(.625turn);
+    transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -218,11 +214,6 @@ h3 {
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
-
-
-
-
 
 .hamburger {
     display: block;
@@ -238,7 +229,6 @@ h3 {
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
-
 
 .hamburger::before,
 .hamburger::after {
@@ -256,12 +246,10 @@ h3 {
     bottom: 6px;
 }
 
-
 /* intro-section */
 
 .intro {
     position: relative;
-
 }
 
 .intro__img {
@@ -275,8 +263,8 @@ h3 {
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
-            "img title"
-            "img subtitle";
+            'img title'
+            'img subtitle';
         grid-template-columns: min-content max-content;
         z-index: 2;
     }
@@ -285,7 +273,6 @@ h3 {
         grid-area: img;
         min-width: 250px;
         position: relative;
-
     }
 
     .section__subtitle--intro {
@@ -297,14 +284,13 @@ h3 {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
-
 }
 
 /* my project section */
 
 .my-projects {
     background-color: var(--clr-dark);
-    background-size: cover;
+    background-size: contain;
     background-blend-mode: multiply;
     color: var(--clr-light);
 }
@@ -341,7 +327,7 @@ h3 {
         margin-right: auto;
     }
 
-    .project+.project {
+    .project + .project {
         margin-left: 2em;
     }
 }
@@ -362,9 +348,9 @@ h3 {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas:
-            "title img"
-            "subtitle img"
-            "text img";
+            'title img'
+            'subtitle img'
+            'text img';
         grid-column-gap: 2em;
     }
 
@@ -406,8 +392,7 @@ h3 {
     }
 
     .portfolio__img {
-        transition:
-            transform 750ms cubic-bezier(.5, 0, .5, 1),
+        transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
             opacity 250ms linear;
     }
 
@@ -419,11 +404,9 @@ h3 {
     .portfolio__img:hover,
     .portfolio__item:focus .portfolio__img {
         transform: scale(1.2);
-        opacity: .5;
+        opacity: 0.5;
     }
-
 }
-
 
 /* footer */
 
@@ -448,7 +431,7 @@ h3 {
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
 .footer__link:hover {
@@ -464,11 +447,11 @@ h3 {
 }
 
 .social-list__item {
-    margin: 0 .5em;
+    margin: 0 0.5em;
 }
 
 .social-list__link {
-    padding: .5em;
+    padding: 0.5em;
 }
 
 /* individual portfolio item */
